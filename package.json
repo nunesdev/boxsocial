@@ -1,0 +1,39 @@
+{
+  "name": "boxsocial",
+  "version": "1.0.0", 
+  "description": "Box Social",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp",
+    "run":"gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bruno_nunes_@bitbucket.org/bruno_nunes_/savemyfriend.git"
+  },
+  "keywords": [
+    "spotify",
+    "app",
+    "box",
+    "social",
+    "connect"
+  ],
+  "author": "Bruno Nunes",
+  "license": "#",
+  "homepage": "https://github.com/nunesdev/boxsocial.git/#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.2.2"
+  }
+}

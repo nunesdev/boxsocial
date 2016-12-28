@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    
+    
+    <title>Save My Friend</title>
+    
+    <!-- Styles -->
+  
+    <!--<link rel="stylesheet" href="css/styles.css">-->
+    <link rel="stylesheet" href="css/base.css">
+
+    
+    <!--<script src="http://maps.google.com/maps/api/js"></script>-->
+</head> 
+  
+
+<div class="container">
+	<section class="text-center" data-ng-controller="spotifyCtrl">
+	  <div class="info" data-ng-show="isLogged">
+	  	<img src="{{user.images[0].url}}"><br/>
+		  {{user.display_name}}<br/>
+		  {{user.id}}<br/>
+	  </div>
+	  
+	  
+	  <div class="login" data-ng-hide="isLogged">
+			<a href="#" data-ng-click="login()">Login Spotify</a>
+		</div>
+		<div data-ng-show="isLogged" class="login">
+			<a href="#" data-ng-click="login()">Desconectar Spotify</a>
+			<a href="#" data-ng-click="facebook()">Conectar Facebook</a>
+			<a href="#" data-ng-click="google()">Conectar Google</a>
+		</div>
+	</section>
+</div>
+      
+
+
+
+
+
+<!-- Scripts -->
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
